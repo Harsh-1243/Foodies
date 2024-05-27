@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+* {
+
+    font-size: 100%;
+    font-family: var(--primary-font);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+
+
+}
+
+:root {
+
+    --primary-font: "Poetsen One", sans-serif;
+    --primary-color: #a82c48;
+    --secondary-color: #43121d;
+    --third-color: #f98169;
+    --white-color: #fff;
+    --text-color: #555;
+    --text-gray: #999;
+    --black-color: #000;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+p {
+
+    font-size: .9rem;
+}
+
+h1 {
+
+    color: var(--primary-color);
+}
+
+h3 {
+
+    color: var(--primary-color);
+}
+
+h2 {
+
+    font-size: 1.6rem;
+}
+
+/* scroll-bar */
+
+::-webkit-scrollbar {
+
+    width: 1rem;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    background: var(--primary-color);
+}
+
+/* header-section */
+
+
+.nav-link {
+
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin: 0 10px;
+    transition: 0.5s;
+
+}
+
+.nav-link:hover {
+
+    color: var(--primary-color);
+}
+
+
+.nav-links::after {
+
+    content: "";
+    width: 0%;
+    height: 5px;
+    background: var(--primary-color);
+    display: block;
+    margin-top: 5px;
+    transition: 0.5s;
+
+}
+
+.nav-links:hover::after {
+
+    width: 100%;
+    color: var(--primary-color);
+
+}
+
+
+.nav-btn {
+
+    background: var(--primary-color);
+    color: white;
+    border: 1px solid transparent;
+    outline: none;
+    outline-offset: none;
+    transition: .5s;
+    width: fit-content;
+}
+
+.nav-btn:hover {
+
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: transparent;
+    border-radius: 100px;
+    box-shadow: 0 10px 5px gray;
+    transform: translateY(-10px);
+
+}
+
+
+.nav-bar {
+
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    z-index: 2;
+}
+
+.slide-mode {
+
+    background: var(--white-color);
+    box-shadow: 0 5px 20px grey;
+}
+
+.navbar-toggler:focus {
+
+    color: transparent;
+    box-shadow: 0 0 20px black;
+
+}
+
+/* top banner section */
+
+.top-banner-btn1 {
+
+    color: var(--white-color);
+    text-decoration: none;
+    border: 1px solid transparent;
+    outline: none;
+    background: var(--primary-color);
+    font-size: 0.7rem;
+    transition: all .5s;
+    font-weight: 900;
+    width: fit-content;
+
+}
+
+
+.top-banner-btn1:hover {
+
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 5px gray;
+
+
+}
+
+
+.top-banner-btn2 {
+
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    background: transparent;
+    font-size: 0.7rem;
+    transition: all .5s;
+    width: fit-content;
+}
+
+.top-banner-btn2:hover {
+
+    color: var(--white-color);
+    border: 1px solid transparent;
+    background: var(--primary-color);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 5px gray;
+
+
+}
+
+.top-banner-heading h1 {
+
+    color: var(--secondary-color);
+}
+
+.top-banner-para p {
+
+    color: var(--text-color);
+}
+
+.top-banner {
+
+    background: url("images/bg/bg-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 16rem 0 10rem;
+
+}
+
+/* counter section */
+
+.counter-sec {
+
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 2rem 0 1rem;
+
+}
+
+.count {
+
+    font-size: 2.1rem;
+    font-weight: 500;
+
+}
+
+/* about section */
+
+.about-us-cont {
+
+    padding: 150px 0;
+
+}
+
+.about-upper-sec {
+
+    margin-bottom: 9.375rem;
+}
+
+.about-upper-sec-img img {
+
+    height: 100%;
+
+}
+
+.about-upper-sec-details-btn button {
+
+    background: var(--primary-color);
+    color: white;
+    border: 1px solid transparent;
+    outline: none;
+    outline-offset: none;
+    transition: .5s;
+    padding: 1rem 2rem;
+    font-size: .8em;
+
+}
+
+.about-upper-sec-details-btn button:hover {
+
+
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 5px gray;
+    border-radius: 50px;
+
+}
+
+.about-upper-sec-details-head h1 {
+
+    font-size: 2.1rem;
+    color: var(--secondary-color);
+
+}
+
+.about-upper-sec-details-para p {
+
+    color: var(--text-color);
+    font-size: 1rem;
+
+}
+
+
+
+
+
+.about-lower-sec-img img {
+
+    height: 100%;
+
+}
+
+.about-lower-sec-details-btn button {
+
+    background: var(--primary-color);
+    color: white;
+    border: 1px solid transparent;
+    outline: none;
+    outline-offset: none;
+    transition: .5s;
+    padding: 1rem 2rem;
+    font-size: .8em;
+
+}
+
+.about-lower-sec-details-btn button:hover {
+
+
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 5px gray;
+    border-radius: 50px;
+
+}
+
+.about-lower-sec-details-head h1 {
+
+    font-size: 2.1rem;
+    color: var(--secondary-color);
+
+}
+
+.about-lower-sec-details-para p {
+
+    color: var(--text-color);
+    font-size: 1rem;
+
+}
+
+
+.qualities p {
+
+    color: var(--secondary-color);
+    font-size: 1rem;
+
+}
+
+
+.fa-check {
+
+    color: var(--primary-color);
+    font-weight: bolder;
+    font-size: 1.4rem;
+
+}
+
+
+/* Quote section */
+
+
+#quote-sec {
+
+    background: url(/food_website/images/bg/bg-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6rem;
+
+
+}
+
+
+.quote-btn button {
+
+
+    background: var(--primary-color);
+    color: white;
+    border: 1px solid transparent;
+    outline: none;
+    outline-offset: none;
+    transition: .5s;
+    padding: 1rem 2rem;
+    font-size: .8em;
+
+}
+
+.quote-btn button:hover {
+
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 5px gray;
+    border-radius: 50px;
+
+}
+
+.quote-para p {
+
+    color: var(--text-color);
+
+}
+
+
+/* Explore food section */
+
+
+#explore-foods {
+
+    padding: 6rem 0;
+}
+
+
+.food-menu-img img {
+
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+
+}
+
+.food-menu-btn button {
+
+    background: var(--primary-color);
+    color: white;
+    border: 1px solid transparent;
+    outline: none;
+    outline-offset: none;
+    transition: .5s;
+    padding: 1rem 2rem;
+    font-size: .8em;
+
+
+
+}
+
+.food-menu-btn button:hover {
+
+
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 5px gray;
+    border-radius: 50px;
+
+}
+
+
+/* testimonial section */
+
+#testimonial {
+
+    background: var(--primary-color);
+    padding: 6rem 0;
+
+}
+
+.testimonial-title h1 {
+
+    color: var(--white-color);
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.carousel-item img {
+
+
+    height: 5rem;
+}
+
+.carousel-item p {
+
+    color: var(--text-color);
+}
+
+.carousel-item h5 {
+
+    color: var(--primary-color);
+
+}
+
+.carousel-indicators {
+
+    position: absolute;
+    bottom: -70px;
+}
+
+.carousel-indicators [data-bs-target] {
+
+    padding: .2rem;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+
+}
+
+
+/* FAQ */
+
+#FAQ{
+
+    padding: 100px 0;
+    
+}
+
+
+.faq-heading h2{
+    color: var(--primary-color);
+}
+
+.fa-arrow-trend-up{
+
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+.que-cont p{
+
+    color: var(--text-color);
+}
+
+
+/* parallax section */
+
+
+#parallax{
+
+    background: url(images/bg/bg-3.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 70px 0;
+}
+
+.parallax-head h2{
+
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+
+.parallax-btn button{
+
+    background: var(--primary-color);
+    color: white;
+    border: 1px solid transparent;
+    outline: none;
+    outline-offset: none;
+    transition: .5s;
+    padding: 1rem 2rem;
+    font-size: .8em;
+}
+
+.parallax-btn button:hover{
+
+    
+    border: 1px solid var(--white-color);
+    background: transparent;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 5px gray;
+    border-radius: 50px;
+
+}
+
+/* sing up section */
+
+#sign-up{
+
+    padding: 100px 0;
+
+}
+
+#sign-up h2{
+
+    color: var(--secondary-color);
+    font-weight: 100;
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 0;
+
+}
+
+#sign-up p{
+
+    color: var(--text-gray);
+    
+}
+
+.email{
+
+    text-transform: capitalize;
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    width: 300px;
+}
+
+.sign-up-btn{
+
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1rem;
+    padding: 1.2rem;
+
+}
+
+/* footer */
+
+#footer{
+
+    background: var(--primary-color);
+
+    padding: 50px ;
+}
+
+.rights p{
+
+    color: var(--white-color);
+    font-size: 1rem;
+}
+
+.socail-media-links i{
+
+    color: var(--white-color);
+    font-size: 2rem;
+
+}
